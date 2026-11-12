@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f5f5f5">
+  <meta name="description" content="A little letter for our first mensive.">
+  <title>Our First Mensive ♡</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <main class="page">
+    <p class="eyebrow">✦ &nbsp; A LITTLE SOMETHING FOR YOU &nbsp; ✦</p>
+    <section class="card">
+      <p class="date">OUR SPECIAL DAY · 01</p>
+      <h1>Happy <em>1st</em><br>Mensive!</h1>
+      <p class="subtitle">One month down, and many more memories to create.</p>
+      <div class="divider"><span></span>♡<span></span></div>
+
+      <section class="envelope" id="envelope">
+        <div class="envelope-icon">✉</div>
+        <p>A letter made just for you.</p>
+        <button id="openBtn">Open your letter ↗</button>
+      </section>
+
+      <section class="letter hidden" id="letter" aria-live="polite">
+        <p class="letter-label">A LETTER FOR MY FAVORITE PERSON</p>
+        <h2>Dear Nani, ♡</h2>
+        <p id="typingText"></p>
+        <p class="signature">With love,<br><strong>Your favorite person.</strong></p>
+      </section>
+
+      <div class="music-player">
+        <div class="music-disc">♫</div>
+        <div class="music-info">
+          <strong>Love</strong>
+          <span>wave to earth · 03:39 – 05:05</span>
+        </div>
+        <button id="musicBtn" class="play-button" aria-label="Play music">▶</button>
+      </div>
+      <p class="music-hint" id="musicHint">Press play to listen to our song.</p>
+      <audio id="bgMusic" preload="metadata">
+        <source src="assets/love-wave-to-earth.mp3" type="audio/mpeg">
+      </audio>
+      <p class="bottom-note">MADE WITH ♡ JUST FOR YOU</p>
+    </section>
+
+    <section class="qr-section">
+      <p class="qr-title">A LITTLE MEMORY TO KEEP</p>
+      <div id="qrcode" aria-label="Website QR code"></div>
+      <p class="qr-description" id="qrDescription">
+        Publish this website first, then this QR code will point to its public link.
+      </p>
+      <button id="copyLink" class="copy-button">Copy website link</button>
+      <p class="qr-warning" id="qrWarning"></p>
+    </section>
+    <footer>© 2026 · OUR LITTLE UNIVERSE</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
